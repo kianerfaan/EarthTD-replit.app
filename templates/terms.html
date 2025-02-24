@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthTD.com - Terms of Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-ui">
+            <a href="{{ url_for('game') }}" class="game-title">EarthTD.com</a>
+        </div>
+    </div>
+    <div class="content-container">
+        <h1 class="page-title">Terms of Service</h1>
+        <div class="policy-content terms-content">
+            <h2>Ownership</h2>
+            <p>EarthTD.com is owned by OpenSourceWebApps.com.</p>
+
+            <h2>Governing Law and Arbitration</h2>
+            <p>These Terms of Service are governed by the laws of the Commonwealth of Pennsylvania. Any disputes arising from these terms will be resolved through binding arbitration in Philadelphia for U.S. users.</p>
+
+            <p>Users in Canada, the UK, France, Germany, Spain, Italy, Sweden, Poland, Australia, or Japan may choose arbitration in their home country, provided they cover associated travel and accommodation costs. All non-US users can opt for a one-panel AAA-ICDR arbitration in New York State.</p>
+
+            <p>To opt out of arbitration, email kianerfaan@proton.me.</p>
+
+            <p>Please use the site responsibly.</p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="copyright-line">
+                <span>© 2025 EarthTD.com</span>
+            </div>
+            <div class="footer-links">
+                <a href="{{ url_for('terms') }}" class="footer-link">Terms of Service</a>
+                <a href="{{ url_for('privacy') }}" class="footer-link">Privacy Policy</a>
+                <a href="https://opensourcewebapps.com" class="footer-link" target="_blank" rel="noopener">OpenSourceWebApps.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

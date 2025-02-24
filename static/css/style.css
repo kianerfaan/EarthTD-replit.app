@@ -1,0 +1,241 @@
+:root {
+    --primary: #4CAF50;
+    --secondary: #FF5722;
+    --accent: #2196F3;
+    --background: #F5F5F5;
+    --ui: #424242;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.game-title {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(16px, 4vw, 24px);
+    text-decoration: none;
+    display: block;
+}
+
+.game-title:hover {
+    color: #ddd;
+}
+
+.game-ui {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--ui);
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(10px, 3vw, 14px);
+    gap: 10px;
+}
+
+.tower-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tower-btn {
+    padding: 10px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(8px, 2.5vw, 12px);
+    min-width: 120px;
+    touch-action: manipulation;
+}
+
+.tower-btn:hover {
+    background-color: #1976D2;
+}
+
+.wave-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(12px, 3vw, 14px);
+    touch-action: manipulation;
+}
+
+.wave-btn:hover {
+    background-color: #388E3C;
+}
+
+#gameCanvas {
+    border: 2px solid var(--ui);
+    background-color: white;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    touch-action: none;
+}
+
+.site-footer {
+    background-color: var(--ui);
+    color: white;
+    padding: 20px 10px;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: clamp(12px, 3vw, 14px);
+}
+
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(12px, 3vw, 14px);
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Content Pages (Terms, Privacy) */
+.content-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.page-title {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--ui);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.policy-content {
+    line-height: 1.6;
+    color: #333;
+}
+
+.terms-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 5px;
+    }
+
+    .resources {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tower-selection {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tower-btn {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .wave-btn {
+        width: 100%;
+    }
+    .content-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .terms-content p {
+        font-size: 14px;
+    }
+}

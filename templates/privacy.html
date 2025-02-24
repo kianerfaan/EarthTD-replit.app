@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthTD.com - Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-ui">
+            <a href="{{ url_for('game') }}" class="game-title">EarthTD.com</a>
+        </div>
+    </div>
+    <div class="content-container">
+        <h1>Privacy Policy</h1>
+        <p>At EarthTD.com, we value your privacy. We only collect the bare minimum needed to keep the website running smoothly for you. This might include basic info like how you use the site.</p>
+        <p>If you've got any questions about this, feel free to email us at kianerfaan@proton.me.</p>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="copyright-line">
+                <span>© 2025 EarthTD.com</span>
+            </div>
+            <div class="footer-links">
+                <a href="{{ url_for('terms') }}" class="footer-link">Terms of Service</a>
+                <a href="{{ url_for('privacy') }}" class="footer-link">Privacy Policy</a>
+                <a href="https://opensourcewebapps.com" class="footer-link" target="_blank" rel="noopener">OpenSourceWebApps.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
