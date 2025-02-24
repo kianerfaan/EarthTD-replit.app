@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthTD.com - Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-ui">
+            <a href="{{ url_for('game') }}" class="game-title">EarthTD.com</a>
+        </div>
+    </div>
+    <div class="content-container">
+        <h1>Privacy Policy</h1>
+        <div class="policy-content">
+            <h2>1. Data Collection</h2>
+            <p>We do not collect any personal information from users of this game.</p>
+            
+            <h2>2. Browser Data</h2>
+            <p>The game may store local data in your browser for game progress.</p>
+            
+            <h2>3. Third-Party Services</h2>
+            <p>We do not share any information with third parties.</p>
+            
+            <h2>4. Updates</h2>
+            <p>This privacy policy may be updated occasionally.</p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="copyright-line">
+                <span>© 2025 EarthTD.com</span>
+                <span>Built by Kian Erfaan</span>
+                <a href="https://x.com/kianerfaan" class="social-link" target="_blank">
+                    <img src="{{ url_for('static', filename='images/x-icon.svg') }}" alt="X (Twitter)" class="social-icon">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="{{ url_for('terms') }}" class="footer-link">Terms of Service</a>
+                <a href="{{ url_for('privacy') }}" class="footer-link">Privacy Policy</a>
+                <a href="https://opensourcewebapps.com" class="footer-link" target="_blank">OpenSourceWebApps.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

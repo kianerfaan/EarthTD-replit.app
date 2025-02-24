@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- North America -->
+    <path d="M100,80 
+             Q180,60 240,100 
+             T300,150 
+             Q260,200 200,180 
+             T100,140 
+             Q80,100 100,80 Z" 
+          fill="#4CAF50" fill-opacity="0.6" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- South America -->
+    <path d="M180,250 
+             Q220,280 240,320 
+             T220,400 
+             Q180,420 160,380 
+             T150,300 
+             Q160,270 180,250 Z" 
+          fill="#4CAF50" fill-opacity="0.6" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- Europe -->
+    <path d="M380,80 
+             Q420,60 460,90 
+             T500,140 
+             Q480,160 440,150 
+             T380,120 
+             Q360,100 380,80 Z" 
+          fill="#4CAF50" fill-opacity="0.6" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- Africa -->
+    <path d="M380,200 
+             Q440,220 460,280 
+             T440,360 
+             Q400,380 360,340 
+             T340,260 
+             Q350,220 380,200 Z" 
+          fill="#4CAF50" fill-opacity="0.6" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- Asia -->
+    <path d="M500,60 
+             Q580,80 640,140 
+             T680,220 
+             Q640,260 580,240 
+             T500,180 
+             Q480,120 500,60 Z" 
+          fill="#4CAF50" fill-opacity="0.6" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- Australia -->
+    <path d="M580,320 
+             Q620,340 640,380 
+             T620,420 
+             Q580,440 560,400 
+             T540,360 
+             Q550,330 580,320 Z" 
+          fill="#4CAF50" fill-opacity="0.6" stroke="#4CAF50" stroke-width="3"/>
+
+    <!-- Ocean connections - making them more visible -->
+    <path d="M100,200 
+             Q250,220 400,240 
+             T700,200" 
+          fill="none" stroke="#2196F3" stroke-width="3" stroke-opacity="0.7"
+          stroke-dasharray="5,5"/>
+
+    <!-- Game path highlight - More dramatic curves -->
+    <path d="M80,280 
+             Q150,200 250,180 
+             T400,160 
+             Q500,140 600,180 
+             T650,250 
+             Q670,300 600,320 
+             T450,350 
+             Q300,380 200,350 
+             T80,280" 
+          fill="none" stroke="#8bc34a" stroke-width="6" stroke-opacity="0.8"
+          stroke-dasharray="10,5"/>
+
+    <!-- Additional decorative elements -->
+    <circle cx="80" cy="280" r="8" fill="#8bc34a" opacity="0.8"/>
+    <circle cx="200" cy="350" r="8" fill="#8bc34a" opacity="0.8"/>
+</svg>
