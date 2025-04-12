@@ -3,7 +3,7 @@ from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SESSION_SECRET", "dev_secret_key")
+app.secret_key = os.environ["SESSION_SECRET"]
 
 @app.route('/')
 def game():
