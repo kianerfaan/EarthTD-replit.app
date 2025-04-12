@@ -4,7 +4,7 @@ EarthTD.com is an experimental indie open-source tower defense web app game wher
 
 ## About
 
-EarthTD.com is owned by [OpenSourceWebApps.com](https://opensourcewebapps.com) and is built with Flask and JavaScript using HTML5 Canvas for rendering.
+EarthTD.com is built with Flask and JavaScript using HTML5 Canvas for rendering.
 
 ## Play the Game
 
