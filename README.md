@@ -59,7 +59,3 @@ We welcome contributions from developers of all skill levels! Here's how to get 
 ## License
 
 This project is open source and available under the MIT License.
-
-## Contact
-
-For questions or suggestions, please email Kian at kianerfaan@proton.me.
